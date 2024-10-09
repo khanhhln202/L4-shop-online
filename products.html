@@ -1,11 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Products</title>
 </head>
+
 <body>
     <h1>Trang danh sách sản phẩm</h1>
+    <form action="https://www.w3schools.com/action_page.php" target="_blank" method="post" autocomplete="on" novalidate>
+        <label for="fullName">Họ và tên</label>
+        <br />
+        <input type="text" id="fullName" name="fullName" />
+        <br />
+        <label for="email">Email:</label>
+        <br />
+        <input type="text" id="email" name="email" />
+        <br />
+        <label for="password">Mật khẩu</label>
+        <br />
+        <input type="password" id="password" name="password" />
+        <br />
+        <br />
+
+        <img src="images/Chụp ở đường lên đồi con heo.jpg" alt="Hình ảnh không thể hiển thị" style="margin-left: 1px; 
+            width: 30%; /* Hoặc có thể dùng px, ví dụ 300px */
+            height: auto; /* Đảm bảo tỷ lệ hình ảnh được giữ nguyên */">
+            <img src="images/Áo sọc.jpg" alt="Lỗi mẹ rồi" style="margin-left: 20px;" width="30%" height="auto">
+        <br>
+        <br>
+
+        <!-- <select></select> -->
+        <label for="colors">Chọn màu sắc</label>
+        <br />
+        <select id="colors" name="color">
+            <option value="red">Đỏ</option>
+            <option value="green">Xanh lá</option>
+            <option value="blue" selected>Xanh dương</option>
+            <option value="yellow">Vàng</option>
+            <option value="black">Đen</option>
+        </select>
+        <br />
+        <br />
+
+        <label for="quantity">Số lượng:</label>
+        <br />
+        <input type="number" id="quantity" name="soLuong" min="1" max="10" />
+        <br />
+        <br />
+
+        <label for="date">Chọn ngày:</label>
+        <br>
+        <input type="date" id="date" name="ngay">
+        <br />
+        <br />
+
+        <label for="time">Chọn thời gian:</label>
+        <br />
+        <input type="time" id="time" name="thoiGian">
+        <br />
+        <br />
+
+        <label for="time">Chọn thời gian:</label>
+        <br />
+        <input type="datetime-local" name="thoiGian" id="time">
+        <br />
+        <br />
+
+        <label for="document">Tài liệu:</label>
+        <br />
+        <input type="file" id="document" name="taiLieu" />
+        <br />
+        <br />
+
+        <!--<input type="checkbox">-->
+        <p>Những ngôn ngữ lập trình bạn đã học:</p>
+        <input type="checkbox" id="ngonNguC" name="language" value="c">
+        <label for="ngonNguC">Ngôn ngữ C</label>
+        <br>
+        <input type="checkbox" id="ngonNguJava" name="language" value="java">
+        <label for="ngonNguJava">Ngôn ngữ Java</label>
+        <br>
+        <input type="checkbox" id="ngonNguPhp" name="language" value="php">
+        <label for="ngonNguPhp">Ngôn ngữ PHP</label>
+        <br>
+        <p>Chuyên ngành bạn đang học:</p>
+        <input type="checkbox" id="frontEnd" name="chuyenNganhHep" value="fe">
+        <label for="frontEnd">Front-end</label>
+        <br>
+        <input type="checkbox" id="backEnd" name="chuyenNganhHep" value="be">
+        <label for="backEnd">Back-end</label>
+        <br>
+        <br>
+
+        <!-- <input type="radio"> -->
+        <p>Giới tính:</p>
+        <input type="radio" id="nam" name="gioiTinh" value="male">
+        <label for="nam">Nam</label>
+        <br>
+        <input type="radio" id="nu" name="gioiTinh" value="female">
+        <label for="nu">Nữ</label>
+        <br>
+        <input type="radio" id="khac" name="gioiTinh" value="other">
+        <label for="khac">Khác</label>
+        <br>
+        <br>
+
+        <!-- <textarea></textarea> -->
+        <label for="note">Ghi chú</label>
+        <br />
+        <textarea id="note" name="note" cols="30" rows="10"></textarea>
+        <br />
+        <br />
+
+
+        <input type="submit" value="Gửi" />
+        <input type="reset" value="Nhập lại" />
+
+    </form>
 </body>
+
 </html>
