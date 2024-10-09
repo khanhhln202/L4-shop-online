@@ -7,5 +7,23 @@
 </head>
 <body>
     <h1>Trang đăng nhập</h1>
+    <form action="MainController" method="POST">
+        <label for="userID">UserID:</label>
+        <input type="text" id="userID" name="userID" required="" style="margin-left: 14px;"/><br/>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required=""/><br/>
+
+        <div class="form-buttons">
+            <input type="submit" name="action" value="Login"/>
+            <input type="reset" name="Reset" />
+        </div>
+        <!-- Các liên kết -->
+        <div class="links">
+            <a href="MainController?action=Create" style="margin-right: 45px;">Create Account</a>
+            
+            <a href="MainController?action=Shopping_Page"><i class="fas fa-shopping-cart"></i> Shopping_Page</a>
+        </div>
+    </form>
 </body>
 </html>
